@@ -1,16 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
 
+import Banner from './components/Banner';
+import PublicIP from './components/widgets/PublicIP';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-         Welcome to Sextant
-        </p>
-       
-      </header>
+      <Banner>Sextant</Banner>
+      <div className='container'>
+      <div className='flex'>
+      <div className='col-4'><PublicIP/></div>
+       </div>
+      </div>
     </div>
   );
 }
